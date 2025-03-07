@@ -19,7 +19,7 @@ const App = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/greet?name=${name}`
+        `https://fullstack-task-backend-nine.vercel.app/api/greet?name=${name}`
       );
       setMessage(response.data.message);
       setError("");
