@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 const cors = require("cors");
-app.use(cors());
+app.use(cors({ origin: "https://fullstack-task0-frontend.vercel.app" }));
 
 // Endpoint to handle greeting
 app.get("/api/greet", (req, res) => {
